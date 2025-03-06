@@ -39,7 +39,7 @@ namespace Pet_Shop_Management
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new UserForm());
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -56,5 +56,27 @@ namespace Pet_Shop_Management
         {
 
         }
+
+        #region METHOD
+        private Form activeForm = null;
+        public void openChildForm(Form Childform)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+
+            activeForm = Childform;
+            Childform.TopLevel = false;
+            Childform.FormBorderStyle = FormBorderStyle.None;
+            Childform.Dock = DockStyle.Fill;
+            labelTittle.Text = Childform.Text;
+
+            panelChild.Controls.Add(Childform);
+            panelChild.Tag = Childform;
+            Childform.BringToFront();
+            Childform.Show();
+        }
+        #endregion METHOD
     }
 }

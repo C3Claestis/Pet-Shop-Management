@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelTittle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnCash = new Guna.UI2.WinForms.Guna2Button();
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
@@ -47,8 +48,7 @@
             this.labelrole = new System.Windows.Forms.Label();
             this.labelusername = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panelChile = new System.Windows.Forms.Panel();
+            this.panelChild = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelDash = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
@@ -70,7 +70,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.labelTittle);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -82,16 +82,16 @@
             this.panel2.Size = new System.Drawing.Size(1194, 65);
             this.panel2.TabIndex = 1;
             // 
-            // label3
+            // labelTittle
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(232, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(769, 40);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Welcome to Usagi Shop Management System";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTittle.AutoSize = true;
+            this.labelTittle.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTittle.Location = new System.Drawing.Point(232, 9);
+            this.labelTittle.Name = "labelTittle";
+            this.labelTittle.Size = new System.Drawing.Size(746, 39);
+            this.labelTittle.TabIndex = 11;
+            this.labelTittle.Text = "Welcome to Usagi Shop Management System";
+            this.labelTittle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -140,11 +140,11 @@
             this.btnExit.HoverState.ForeColor = System.Drawing.Color.Transparent;
             this.btnExit.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnExit.Location = new System.Drawing.Point(1130, 2);
+            this.btnExit.ImageSize = new System.Drawing.Size(25, 25);
+            this.btnExit.Location = new System.Drawing.Point(1151, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.PressedColor = System.Drawing.Color.Transparent;
-            this.btnExit.Size = new System.Drawing.Size(60, 60);
+            this.btnExit.Size = new System.Drawing.Size(40, 40);
             this.btnExit.TabIndex = 3;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -163,6 +163,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(194, 615);
             this.panel3.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 425);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(6, 145);
+            this.panel5.TabIndex = 10;
             // 
             // btnLogout
             // 
@@ -350,22 +359,13 @@
             this.guna2CirclePictureBox1.TabIndex = 3;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // panel5
+            // panelChild
             // 
-            this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 425);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(6, 145);
-            this.panel5.TabIndex = 10;
-            // 
-            // panelChile
-            // 
-            this.panelChile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelChile.Location = new System.Drawing.Point(194, 65);
-            this.panelChile.Name = "panelChile";
-            this.panelChile.Size = new System.Drawing.Size(1000, 300);
-            this.panelChile.TabIndex = 3;
+            this.panelChild.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelChild.Location = new System.Drawing.Point(194, 65);
+            this.panelChild.Name = "panelChild";
+            this.panelChild.Size = new System.Drawing.Size(1000, 300);
+            this.panelChild.TabIndex = 3;
             // 
             // panel6
             // 
@@ -392,7 +392,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 680);
             this.Controls.Add(this.panelDash);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panelChile);
+            this.Controls.Add(this.panelChild);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -430,11 +430,11 @@
         private System.Windows.Forms.Label labelrole;
         private System.Windows.Forms.Label labelusername;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelTittle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panelChile;
+        private System.Windows.Forms.Panel panelChild;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panelDash;
     }
