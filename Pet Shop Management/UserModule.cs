@@ -58,6 +58,7 @@ namespace Pet_Shop_Management
             }
             catch (Exception)
             {
+                SqlConnection.Close();
                 MessageBox.Show("Registrasi gagal", "User Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -94,6 +95,7 @@ namespace Pet_Shop_Management
             }
             catch (Exception)
             {
+                SqlConnection.Close();
                 MessageBox.Show("Registrasi gagal", "User Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -133,6 +135,8 @@ namespace Pet_Shop_Management
             comboBoxRole.SelectedIndex = 0;
             dateTimePickerDob.Value = DateTime.Now;
             txtPassword.Clear();
+
+            buttonUpdate.Enabled = false;
         }
 
         public void CheckField()

@@ -44,7 +44,7 @@ namespace Pet_Shop_Management
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new ProductForm());
         }
 
         private void btnCash_Click(object sender, EventArgs e)
