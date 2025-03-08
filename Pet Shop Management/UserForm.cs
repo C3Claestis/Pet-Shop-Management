@@ -27,7 +27,7 @@ namespace Pet_Shop_Management
 
         private void textSearch_TextChanged(object sender, EventArgs e)
         {
-
+            LoadUser();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -60,12 +60,13 @@ namespace Pet_Shop_Management
             {
                 if(MessageBox.Show("Ingin menghapus data ini?", caption: "Delete User",
                     buttons: MessageBoxButtons.YesNo, icon: MessageBoxIcon.Question) == DialogResult.Yes)
-                {                  
-                    SqlCommand = new SqlCommand("DELETE FROM tbUser WHERE id = @id", SqlConnection);
-                    SqlCommand.Parameters.AddWithValue("@id", dataGridViewUser.Rows[e.RowIndex].Cells[1].Value.ToString());
-                    SqlConnection.Open();
-                    SqlCommand.ExecuteNonQuery();
-                    SqlConnection.Close();
+                {
+                    dbConnect.executeQuery("DELETE FROM tbUser WHERE id LIKE'" + dataGridViewUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
+                    //SqlCommand = new SqlCommand("DELETE FROM tbUser WHERE id = @id", SqlConnection);
+                    //SqlCommand.Parameters.AddWithValue("@id", dataGridViewUser.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    //SqlConnection.Open();
+                    //SqlCommand.ExecuteNonQuery();
+                    //SqlConnection.Close();
                     MessageBox.Show("Data berhasil dihapus", "Delete User", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
@@ -92,8 +93,6 @@ namespace Pet_Shop_Management
             SqlConnection.Close();
         }
 
-        #endregion Method
-
-        
+        #endregion Method        
     }
 }

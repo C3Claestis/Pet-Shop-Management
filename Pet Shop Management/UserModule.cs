@@ -86,7 +86,7 @@ namespace Pet_Shop_Management
                         SqlConnection.Open();
                         SqlCommand.ExecuteNonQuery();
                         SqlConnection.Close();
-                        MessageBox.Show("Update data berhasil", "User Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Update data berhasil", "User Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         clear();
                         userForm.LoadUser();
                         this.Dispose();
@@ -96,7 +96,7 @@ namespace Pet_Shop_Management
             catch (Exception)
             {
                 SqlConnection.Close();
-                MessageBox.Show("Registrasi gagal", "User Registration", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Update gagal", "User Update", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
