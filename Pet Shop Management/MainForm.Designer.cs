@@ -428,7 +428,6 @@
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label labelrole;
-        private System.Windows.Forms.Label labelusername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelTittle;
         private System.Windows.Forms.Label label2;
@@ -437,5 +436,6 @@
         private System.Windows.Forms.Panel panelChild;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panelDash;
+        public System.Windows.Forms.Label labelusername;
     }
 }

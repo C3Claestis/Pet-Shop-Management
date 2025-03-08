@@ -49,7 +49,7 @@ namespace Pet_Shop_Management
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new CashForm(this));
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

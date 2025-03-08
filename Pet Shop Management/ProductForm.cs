@@ -33,7 +33,7 @@ namespace Pet_Shop_Management
 
         private void textSearch_TextChanged(object sender, EventArgs e)
         {
-
+            LoadProduct();
         }
 
         private void dataGridViewProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
