@@ -253,13 +253,14 @@
             this.btnUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUser.Enabled = false;
             this.btnUser.FillColor = System.Drawing.Color.Transparent;
             this.btnUser.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.DarkGray;
             this.btnUser.HoverState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.btnUser.HoverState.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnUser.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnUser.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnUser.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUser.Location = new System.Drawing.Point(0, 290);
@@ -267,6 +268,7 @@
             this.btnUser.Size = new System.Drawing.Size(194, 45);
             this.btnUser.TabIndex = 2;
             this.btnUser.Text = "User";
+            this.btnUser.Visible = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnCustomer
@@ -423,11 +425,9 @@
         private Guna.UI2.WinForms.Guna2Button btnLogout;
         private Guna.UI2.WinForms.Guna2Button btnCash;
         private Guna.UI2.WinForms.Guna2Button btnProduct;
-        private Guna.UI2.WinForms.Guna2Button btnUser;
         private Guna.UI2.WinForms.Guna2Button btnCustomer;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private System.Windows.Forms.Label labelrole;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelTittle;
         private System.Windows.Forms.Label label2;
@@ -437,5 +437,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panelDash;
         public System.Windows.Forms.Label labelusername;
+        public System.Windows.Forms.Label labelrole;
+        public Guna.UI2.WinForms.Guna2Button btnUser;
     }
 }

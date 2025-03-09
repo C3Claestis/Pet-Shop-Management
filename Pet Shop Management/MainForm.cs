@@ -54,7 +54,12 @@ namespace Pet_Shop_Management
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Are you sure you want to Logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LoginForm loginForm = new LoginForm();
+                this.Dispose();
+                loginForm.ShowDialog();
+            }               
         }
 
         #region METHOD

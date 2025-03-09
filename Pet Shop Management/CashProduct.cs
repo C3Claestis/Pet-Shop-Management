@@ -73,7 +73,7 @@ namespace Pet_Shop_Management
         {
             int i = 0;
             dataGridViewProduct.Rows.Clear();
-            SqlCommand = new SqlCommand("SELECT pname,ptype,pcategory,pqty,pprice FROM tbProduct WHERE CONCAT(pname,ptype,pcategory) LIKE '%" +
+            SqlCommand = new SqlCommand("SELECT pcode, pname, ptype, pcategory, pprice FROM tbProduct WHERE CONCAT(pname,ptype,pcategory) LIKE '%" +
                 textSearch.Text + "%'", SqlConnection);
             SqlConnection.Open();
             SqlDataReader = SqlCommand.ExecuteReader();
@@ -86,6 +86,6 @@ namespace Pet_Shop_Management
             SqlDataReader.Close();
             SqlConnection.Close();
         }
-        #endregion METHOD
+        #endregion METHOD      
     }
 }

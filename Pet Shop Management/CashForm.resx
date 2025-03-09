@@ -151,7 +151,7 @@
   <data name="Increase.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAANZJREFUSEvtlEEOwiAQRWfpFTRx5RV0WXfGQ7jxAO71CtZDWTp4C9MmXqF1+zFQ
+        wAAADsABataJCQAAANZJREFUSEvtlEEOwiAQRWfpFTRx5RV0WXfGQ7jxAO71CtZDWTp4C9MmXqF1+zFQ
         REuamFZ0xUsIzAzwQgIQRX6GxIQEdiQw9kthEJgS40qslOl1HJSW4NlCijoFIUWNoLAb1sQQdiyIcbfj
         YrhIYkaM0gkElsRIbZzSxcT18BPpW8S42Q0qI9C8SzSNuLK5st+tk2rrBBKJy/sSMxeJE0lsXP4jZzUi
         VgeSmLfyXRJNhgXl2Jt1X5Pj1CkJSpT0Ikp68RfJ6zEe/VI4BNbm182w8kuRYDwAZVgKGQC3kjwAAAAA
@@ -164,7 +164,7 @@
   <data name="Decrease.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAAKpJREFUSEvt1DEOgkAQheE5gKWFB7G09Bgew4LSW1ESMjSewIPYz9MZWMMumLBm
+        wAAADsABataJCQAAAKpJREFUSEvt1DEOgkAQheE5gKWFB7G09Bgew4LSW1ESMjSewIPYz9MZWMMumLBm
         pzDZPyFLllm+hAKimluMM7E8bHWLcSMGbHWrIllVJKv/QzrsqEdDgxyj/W+IzvVytXObG+QyvkyexDh9
         9tcQfT7Owc5trsN++kfFUIrMAZ3Xc1ndcVhAcyQFdP6nFpC0031bBghFUHqVAEKrUEkgFH86ByBkEBo/
         oPbuBQxMCPAq3zLJAAAAAElFTkSuQmCC
@@ -176,7 +176,7 @@
   <data name="Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAAf9JREFUOE9jYBjyQF5eS0JRUdsXhGVktITQ5YkCSkrG/IqKOklyClpp8graU+QV
+        vQAADr0BR/uQrQAAAf9JREFUOE9jYBjyQF5eS0JRUdsXhGVktITQ5YkCSkrG/IqKOklyClpp8graU+QV
         tavkFbUb5RW0J4PEQHIgNej6sAFmFx2LsBADm31XgpP/3wlNw8BPIjL+3wxJ/R9uYLPDXcciDKQH3RA4
         kFXRVp7i6P93l0/0/72+MVjxQb/Y//t9Y//v9on+P9XR/6+8vL4CujkoQElJx2tDYum/kzlN/3elVP4H
         0Ycy6sAYxN6TWgWmF0Tl/lFQ1TNH148BtFUNNY9nN/56VNr3/0JI6v9Luc3/90Zk/j8Wkw9mnwpJ/f+6

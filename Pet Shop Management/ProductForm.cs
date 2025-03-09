@@ -59,12 +59,11 @@ namespace Pet_Shop_Management
                 if (MessageBox.Show("Ingin menghapus Produk ini?", caption: "Delete Product",
                     buttons: MessageBoxButtons.YesNo, icon: MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    dbConnect.executeQuery("DELETE FROM tbProduct WHERE id LIKE'" + dataGridViewProduct.Rows[e.RowIndex].Cells[1].Value.ToString() + "'");
-                    //SqlCommand = new SqlCommand("DELETE FROM tbProduct WHERE pcode = @pcode", SqlConnection);
-                    //SqlCommand.Parameters.AddWithValue("@pcode", dataGridViewProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
-                    //SqlConnection.Open();
-                    //SqlCommand.ExecuteNonQuery();
-                    //SqlConnection.Close();
+                    SqlCommand = new SqlCommand("DELETE FROM tbProduct WHERE pcode = @pcode", SqlConnection);
+                    SqlCommand.Parameters.AddWithValue("@pcode", dataGridViewProduct.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    SqlConnection.Open();
+                    SqlCommand.ExecuteNonQuery();
+                    SqlConnection.Close();
                     MessageBox.Show("Data berhasil dihapus", "Delete Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
