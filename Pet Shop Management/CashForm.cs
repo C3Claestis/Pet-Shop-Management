@@ -37,7 +37,20 @@ namespace Pet_Shop_Management
 
         private void btnCash_Click(object sender, EventArgs e)
         {
+            CashCustomer cashCustomer = new CashCustomer(this);
+            cashCustomer.ShowDialog();
 
+            if (MessageBox.Show("Are you sure you want to cash this product?", "Cashing", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                getTransno();
+                mainForm.loadDailySales();
+                for (int i = 0; i < dataGridViewCash.Rows.Count; i++)
+                {
+                    dbConnect.executeQuery("UPDATE tbProduct SET pqty=pqty - " + int.Parse(dataGridViewCash.Rows[i].Cells[4].Value.ToString())
+                       + "WHERE pcode LIKE " + dataGridViewCash.Rows[i].Cells[2].Value.ToString() + "");
+                }                
+                dataGridViewCash.Rows.Clear();
+            }
         }
 
 

@@ -31,8 +31,8 @@ namespace Pet_Shop_Management
             {
                 guna2ProgressBar1.Value = 0;
                 timer1.Stop();
-                
-                
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
                 this.Hide();
             }
         }

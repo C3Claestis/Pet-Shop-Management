@@ -51,11 +51,29 @@
             this.panelChild = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelDash = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelSales = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.timeProgress = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.panelDash.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,9 +102,10 @@
             // 
             // labelTittle
             // 
-            this.labelTittle.AutoSize = true;
+            this.labelTittle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelTittle.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTittle.Location = new System.Drawing.Point(232, 9);
+            this.labelTittle.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.labelTittle.Location = new System.Drawing.Point(260, 13);
             this.labelTittle.Name = "labelTittle";
             this.labelTittle.Size = new System.Drawing.Size(746, 39);
             this.labelTittle.TabIndex = 11;
@@ -260,7 +279,7 @@
             this.btnUser.HoverState.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.btnUser.HoverState.FillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnUser.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnUser.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnUser.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUser.Location = new System.Drawing.Point(0, 290);
@@ -380,12 +399,159 @@
             // 
             // panelDash
             // 
+            this.panelDash.Controls.Add(this.panel10);
+            this.panelDash.Controls.Add(this.panel8);
+            this.panelDash.Controls.Add(this.panel7);
             this.panelDash.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDash.Location = new System.Drawing.Point(194, 371);
             this.panelDash.Name = "panelDash";
-            this.panelDash.Padding = new System.Windows.Forms.Padding(3);
+            this.panelDash.Padding = new System.Windows.Forms.Padding(10);
             this.panelDash.Size = new System.Drawing.Size(1000, 309);
             this.panelDash.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.timeProgress);
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(724, 10);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(266, 289);
+            this.panel7.TabIndex = 0;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(718, 10);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(6, 289);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel9.Controls.Add(this.pictureBox2);
+            this.panel9.Controls.Add(this.label4);
+            this.panel9.Controls.Add(this.label6);
+            this.panel9.Controls.Add(this.label5);
+            this.panel9.Controls.Add(this.labelSales);
+            this.panel9.Location = new System.Drawing.Point(3, 34);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(260, 121);
+            this.panel9.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 22);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Daily Report";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelSales
+            // 
+            this.labelSales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSales.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSales.ForeColor = System.Drawing.Color.White;
+            this.labelSales.Location = new System.Drawing.Point(84, 10);
+            this.labelSales.Name = "labelSales";
+            this.labelSales.Size = new System.Drawing.Size(169, 30);
+            this.labelSales.TabIndex = 0;
+            this.labelSales.Text = "0.00";
+            this.labelSales.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(63, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(11, 87);
+            this.label5.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(80, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 20);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Daily Sales";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(80, 75);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(173, 44);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Today daily sales recorded in inventory";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 45);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // timeProgress
+            // 
+            this.timeProgress.BackColor = System.Drawing.Color.Transparent;
+            this.timeProgress.FillColor = System.Drawing.Color.SlateGray;
+            this.timeProgress.FillOffset = 10;
+            this.timeProgress.FillThickness = 10;
+            this.timeProgress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeProgress.ForeColor = System.Drawing.Color.Black;
+            this.timeProgress.InnerColor = System.Drawing.Color.GreenYellow;
+            this.timeProgress.Location = new System.Drawing.Point(70, 161);
+            this.timeProgress.Minimum = 0;
+            this.timeProgress.Name = "timeProgress";
+            this.timeProgress.ProgressColor = System.Drawing.Color.DodgerBlue;
+            this.timeProgress.ProgressColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.timeProgress.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.timeProgress.ProgressOffset = 10;
+            this.timeProgress.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.timeProgress.ProgressThickness = 10;
+            this.timeProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.timeProgress.ShowText = true;
+            this.timeProgress.Size = new System.Drawing.Size(122, 122);
+            this.timeProgress.TabIndex = 13;
+            this.timeProgress.Text = "00.00.00";
+            this.timeProgress.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Custom;
+            this.timeProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.timeProgress.Value = 10;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.pictureBox3);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(10, 10);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(708, 289);
+            this.panel10.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(708, 289);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // MainForm
             // 
@@ -411,6 +577,14 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.panelDash.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,5 +613,17 @@
         public System.Windows.Forms.Label labelusername;
         public System.Windows.Forms.Label labelrole;
         public Guna.UI2.WinForms.Guna2Button btnUser;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelSales;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar timeProgress;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

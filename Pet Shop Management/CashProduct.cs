@@ -74,7 +74,7 @@ namespace Pet_Shop_Management
             int i = 0;
             dataGridViewProduct.Rows.Clear();
             SqlCommand = new SqlCommand("SELECT pcode, pname, ptype, pcategory, pprice FROM tbProduct WHERE CONCAT(pname,ptype,pcategory) LIKE '%" +
-                textSearch.Text + "%'", SqlConnection);
+                textSearch.Text + "%' AND pqty > "+0+"", SqlConnection);
             SqlConnection.Open();
             SqlDataReader = SqlCommand.ExecuteReader();
             while (SqlDataReader.Read())
